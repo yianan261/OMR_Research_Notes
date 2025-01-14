@@ -1,4 +1,4 @@
-
+1/7/2025:
 1. Need a working demo
 ## steps
 1.  find open source project first (then we have something to demo, we improve)
@@ -15,11 +15,13 @@ resources: GPU server → not for LLM
 
 mode of communication (rent GPU)
 
-## Current techniques
-[[OMR Techniques]]
+## Current Literature
+[[Literature and Github]]
 
 ## Evaluation
 [[Evaluation]]
 
-Questions
+### Questions
 [[Questions]]
+The definitions of OMR and some OMR research includes handwritten manuscripts (https://link.springer.com/chapter/10.1007/978-3-031-41498-5_7?fromPaywallRec=false)
+Our project scope right now should not include handwritten manuscripts but offline typeset/printable music sheets/scores

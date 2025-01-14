@@ -3,7 +3,6 @@ The aim of this project is to develop a sheet music reader. This is called Optic
 
 ## Techniques
 ### 1. Noise Filtering and Binarization
-![[Pasted image 20250113165740.png]]
 
 ### 2. Segmentation
 [  

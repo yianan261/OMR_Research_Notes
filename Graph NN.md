@@ -1,0 +1,3 @@
+### Graphic NN:
+
+[http://pages.cvc.uab.es/abaro/papers/2022_ICFHR_ABaro.pdf](https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fpages.cvc.uab.es%2Fabaro%2Fpapers%2F2022_ICFHR_ABaro.pdf&data=05%7C02%7Cychen17%40stevens.edu%7C3bbb96ebd55d4aecd5f608dd2fffe190%7C8d1a69ec03b54345ae21dad112f5fb4f%7C0%7C0%7C638719498237894318%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=2D2VR3fVuWd0mYr66mkdLp2YKBmhiBP8xwSn%2FrerTJI%3D&reserved=0 "Original URL: http://pages.cvc.uab.es/abaro/papers/2022_ICFHR_ABaro.pdf. Click or tap if you trust this link.")
