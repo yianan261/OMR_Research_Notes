@@ -1,0 +1,2 @@
+
+1. what kind of ORM are we pursuing in our project? does it including reading manuscripts and converting to digital format or is it just music sheets/scores converting to MIDI/audio file or machine-readable code?
