@@ -31,3 +31,10 @@ For our project we're concerned with the **replayability** (extraction of music 
 The definitions of OMR and some OMR research includes handwritten manuscripts (https://link.springer.com/chapter/10.1007/978-3-031-41498-5_7?fromPaywallRec=false)
 
 Our project scope right now should not include handwritten manuscripts but offline typeset/printable music sheets/scores
+
+## Current pain points
+1. Music Object Detection not ideal for densely packed objects (such as polyphonic scores)
+> [!PDF|red] [[understandingOMR.pdf#page=24&selection=50,0,56,39&color=red|understandingOMR, p.24]]
+> > Music Object Detection: recent work has shown that the music object detection stage can be addressed in one step with deep neural networks. However, the accuracy is still far from optimal, which is especially detrimental to the following stages of the pipeline that are based on these results. In order to improve the detection performance, it might be interesting to develop models that are specific to the type of inputs that OMR works on: large images with a high quantity of densely packed objects of various sizes from a vast vocabulary
+
+2. Evaluation: lack of standards for outputting OMR results

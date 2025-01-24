@@ -8,3 +8,6 @@ from > ([[understandingOMR.pdf#page=14&selection=52,0,64,95&color=yellow|underst
 >  • Structured Encoding: recovering the music along with the information on how it was encoded using elements of music notation. This avenue is oriented towards providing the score for music
 
 ## Level of comprehension
+
+## AI research assistant
+[[AI RA on some findings]]

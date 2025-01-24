@@ -193,3 +193,90 @@ In the context of the paper you mentioned:
 > > e.g., with MIDI) is similar to storing a piece of writing in a plain text file; whereas representing music with music notation (e.g., with MusicXML) is similar to a structured description like an HTML website. By analogy, obtaining the structured encoding from the image of a music score can be as challenging as recovering the HTML source code from the screenshot of a website.
 > 
 > 
+
+#### Structured encoding
+> [!PDF|red] [[understandingOMR.pdf#page=18&selection=36,0,46,9&color=red|understandingOMR, p.18]]
+> > This brings us to our last category that requires the highest level of comprehension, called structured encoding. Structured encoding aims to recognize the entire music score while retaining all the engraving information available to a human reader. Since there is no viable alternative to music notation, the system has to fully transcribe the document into a structured digital format with the ultimate goal of keeping the same musical information that could be retrieved from the physical score itself. Definition 5. Structured Encoding refers to a class of Optical Music Recognition applications that fully decode the musical content, along with the information of ’how’ it was encoded by means of music notation.
+
+> [!PDF|red] [[understandingOMR.pdf#page=18&selection=60,95,62,28&color=red|understandingOMR, p.18]]
+> > In summary, any system discarding engraving information that conveys musical semantics, by definition, cannot reach the structured encoding goal
+
+### lack of evaluation standards for structured encoding
+> [!PDF|red] [[understandingOMR.pdf#page=19&selection=39,34,42,56&color=red|understandingOMR, p.19]]
+> >  Given the ground truth representation of a score and the output of a recognition system, there is currently no automatic method that is capable of reliably computing how well the recognition system performed. Ideally, such a method would be rigorously described and evaluated, have a public implementation, and give meaningful result
+
+## Open Issues and Perspectives for Future Research in Optical Music Recognition (OMR)
+
+### Non-Technical Issues:
+1. **Legal Aspects**:  
+   - Written music is intellectual property, and sharing scores without permission can lead to copyright infringement.  
+   - Solutions like IMSLP only store older scores or operate in legal gray areas to avoid disputes.  
+
+2. **Stable Community**:  
+   - OMR research has been historically uncoordinated with limited collaboration.  
+   - Lack of dedicated venues and researchers rarely meeting in person leads to repeating previously solved problems.  
+
+3. **Lack of Standards Representations**:  
+   - No universal standard exists for structured encoding, leading to incompatibilities between systems.  
+   - Collaboration with standardization communities (e.g., W3C, MEI) is needed.  
+
+4. **Evaluation**:  
+   - Current evaluation methods are inadequate and inconsistent.  
+   - An ideal method should be rigorous, verified, public, and provide meaningful results without relying on specific use cases.  
+
+---
+
+## Open Issues and Perspectives for Future Research in Optical Music Recognition (OMR)
+
+### Non-Technical Issues:
+1. **Legal Aspects**:  
+   - Written music is intellectual property, and sharing scores without permission can lead to copyright infringement.  
+   - Solutions like IMSLP only store older scores or operate in legal gray areas to avoid disputes.  
+
+2. **Stable Community**:  
+   - OMR research has been historically uncoordinated with limited collaboration.  
+   - Lack of dedicated venues and researchers rarely meeting in person leads to repeating previously solved problems.  
+
+3. **Lack of Standards Representations**:  
+   - No universal standard exists for structured encoding, leading to incompatibilities between systems.  
+   - Collaboration with standardization communities (e.g., W3C, MEI) is needed.  
+
+4. **Evaluation**:  
+   - Current evaluation methods are inadequate and inconsistent.  
+   - An ideal method should be rigorous, verified, public, and provide meaningful results without relying on specific use cases.  
+
+---
+
+### Technical Issues and Future Research Directions:
+1. **Music Object Detection**:  
+   - While deep neural networks show promise, detection accuracy is suboptimal and affects later stages.  
+   - Future work could focus on models tailored to large, high-quality images with diverse symbol vocabularies.  
+
+2. **Semantic Reconstruction**:  
+   - Detecting music objects is insufficient for a full music notation recognition system.  
+   - Current methods rely on handcrafted heuristics that are limited.  
+   - Machine learning-based semantic reconstruction is an unexplored research area.  
+
+3. **Structured Encoding Research**:  
+   - Despite its importance, there is a lack of research and open systems focused on reconstructing music notation in its entirety.  
+
+4. **Full End-to-End Systems**:  
+   - Current OMR systems lag behind advancements in tasks like text or speech recognition.  
+   - Limitations arise from reliance on recurrent neural networks designed for one-dimensional outputs, which are less suitable for music notation.  
+
+5. **Statistical Modeling**:  
+   - Many OMR models rely on deterministic outputs, but introducing probabilistic methods could improve accuracy.  
+   - Statistical models can provide a measure of confidence in results, benefiting semantic reconstruction and user-interactive systems.  
+   (don't really understand this part:
+   > [!PDF|red] [[understandingOMR.pdf#page=25&selection=6,1,23,44&color=red|understandingOMR, p.25]]
+> > Statistical modeling: most machine learning algorithms are based on statistical models that are able to provide a probability distribution over the set of possible recognition hypotheses. When it comes to recognizing, we are typically interested in the best hypothesis—the one that is proposed as an answer—forgetting the probability given to such hypothesis by the model. However, it could be interesting to be able to exploit this uncertainty. For example, in the standard decomposition of stages in OMR systems, the semantic reconstruction stage could benefit from having a set of hypotheses about the objects detected in the previous stage, instead of single proposals. Then, the semantic reconstruction algorithm could establish relationships that are more logical a priori, although the objects involved have a lower probability according to the object detector. These types of approaches have not been deeply explored in the OMR field. Statistical modeling could also be useful so that the system provides a measure of its confidence about the output. Then, the end user might have a certain notion about the accuracy that has been obtained for the given input. This would be especially useful in an interactive system (see below).
+> 
+> )
+
+6. **Generalizing Systems**:  
+   - A key challenge is adapting models to various real-world datasets.  
+   - Leveraging synthetic datasets (e.g., typeset music) to train handwritten recognition systems could reduce the need for manually labeled data.  
+
+7. **Interactive Systems**:  
+   - These systems focus on user input for improving recognition accuracy, such as error corrections or activating/deactivating constraints.  
+   - Exploring innovative interfaces (e.g., electronic pens, MIDI pianos) could enhance user experience in OMR systems.  

@@ -1,19 +1,26 @@
 {
 	"nodes":[
-		{"id":"196af9ae129b7f17","type":"group","x":600,"y":-1280,"width":1920,"height":1280,"color":"4","label":"OMR Techniques"},
+		{"id":"196af9ae129b7f17","type":"group","x":520,"y":-1520,"width":2200,"height":1600,"color":"4","label":"OMR Techniques"},
 		{"id":"2a5f57fc75eda644","type":"group","x":-300,"y":240,"width":780,"height":800,"color":"2","label":"Evaluation"},
+		{"id":"da5f478fc98c81c4","type":"group","x":640,"y":360,"width":915,"height":680,"color":"#aa22ee","label":"Datasets"},
 		{"id":"d41cf02ea0d396c1","type":"group","x":-360,"y":-960,"width":720,"height":540,"color":"6","label":"Overview of OMR"},
 		{"id":"1397383c3bee83ea","type":"text","text":" Notes[[Understanding OMR]]\nPaper \n> [!PDF|255, 208, 0] [[understandingOMR.pdf#page=1&annotation=977R|understandingOMR, p.1]]\n> > Jorge Calvo-Zaragoza*,  University of Alicante Jan Hajiˇc Jr.*,  Charles University Alexander Pacha*,  TU Wien\n> \n> ","x":-340,"y":-720,"width":340,"height":200,"color":"6"},
 		{"id":"8caf05d5f62eb707","type":"text","text":"OMR overview","x":-140,"y":-940,"width":250,"height":60,"color":"6"},
-		{"id":"5eca21d495ec50d5","type":"text","text":"Notes: Sheet Music Transformer\nPaper: \n![[Sheet Music Transformer- End-To-End Optical Music Recognition Beyond Monophonic Transcription-compressed.webp]]\n\n[[Sheet Music Transformer- End-To-End Optical Music Recognition Beyond Monophonic Transcription-compressed.pdf#page=1&rect=131,518,497,683|Sheet Music Transformer- End-To-End Optical Music Recognition Beyond Monophonic Transcription-compressed, p.1]]\n","x":620,"y":-900,"width":380,"height":380,"color":"2"},
-		{"id":"edd25bfc0795618e","type":"text","text":"Transformers","x":805,"y":-1190,"width":250,"height":60,"color":"2"},
-		{"id":"c498cbb0891fa771","type":"text","text":"Methods","x":1550,"y":-1215,"width":250,"height":50,"color":"3"},
-		{"id":"179bb11ce9577fdd","type":"text","text":"How to segment complex, dense scores with CNN\n[[Bootstrapping_Samples_of_Accidentals_in_Dense_Piano_Scores_for_CNN-Based_Detection.pdf#page=1&selection=0,45,1,36|Bootstrapping_Samples_of_Accidentals_in_Dense_Piano_Scores_for_CNN-Based_Detection, p.1]]","x":1705,"y":-1020,"width":250,"height":335,"color":"3"},
-		{"id":"c10fa58037cf7a00","type":"text","text":"TItle: OMR: state of the art and open issues (cited by 400+)\nDiscusses some common processing techniques and OMR algorithms, as well as evaluation issues\n\nNotes:\n![[state-of-the-art_and_issues.pdf#page=1&selection=9,0,29,15&color=yellow]]\n","x":1360,"y":-1035,"width":315,"height":395,"color":"3"},
 		{"id":"ddb4bba370f8dbf2","type":"text","text":"Evalution","x":-40,"y":280,"width":250,"height":60,"color":"#d54407"},
 		{"id":"167c0aef7b0a29fc","type":"file","file":"papers/evaluation papers/A Case for Intrinsic Evaluation of Optical Music Recognition_compressed.pdf","x":-240,"y":440,"width":400,"height":400,"color":"#d54407"},
-		{"id":"b2f8988ba798196c","type":"text","text":"List of  datasets (includes handwritten and printed sources)\n> [!PDF|] [[Towards_a_Universal_Music_Symbol_Classifier.pdf#page=1&selection=0,42,0,42|Towards_a_Universal_Music_Symbol_Classifier, p.1]]\n> > Towards a Universal Music Symbol Classifier\n> \n> ","x":645,"y":480,"width":355,"height":360,"color":"#aa2bee"},
-		{"id":"aca33838b0d96eed","type":"text","text":"Datatsets","x":875,"y":260,"width":250,"height":80,"color":"#aa2bee"}
+		{"id":"edd25bfc0795618e","type":"text","text":"Transformers","x":750,"y":-1442,"width":250,"height":60,"color":"2"},
+		{"id":"c10fa58037cf7a00","type":"text","text":"TItle: OMR: state of the art and open issues (cited by 400+)\nDiscusses some common processing techniques and OMR algorithms, as well as evaluation issues\n\nNotes:\n![[state-of-the-art_and_issues.pdf#page=1&selection=9,0,29,15&color=yellow]]\n","x":1320,"y":-1252,"width":315,"height":395,"color":"3"},
+		{"id":"c498cbb0891fa771","type":"text","text":"Methods","x":1510,"y":-1432,"width":250,"height":50,"color":"3"},
+		{"id":"5eca21d495ec50d5","type":"text","text":"Notes: Sheet Music Transformer\nPaper: \n![[Sheet Music Transformer- End-To-End Optical Music Recognition Beyond Monophonic Transcription-compressed.webp]]\n\n[[Sheet Music Transformer- End-To-End Optical Music Recognition Beyond Monophonic Transcription-compressed.pdf#page=1&rect=131,518,497,683|Sheet Music Transformer- End-To-End Optical Music Recognition Beyond Monophonic Transcription-compressed, p.1]]\n","x":565,"y":-1152,"width":380,"height":380,"color":"2"},
+		{"id":"179bb11ce9577fdd","type":"text","text":"How to segment complex, dense scores with CNN\n[[Bootstrapping_Samples_of_Accidentals_in_Dense_Piano_Scores_for_CNN-Based_Detection.pdf#page=1&selection=0,45,1,36|Bootstrapping_Samples_of_Accidentals_in_Dense_Piano_Scores_for_CNN-Based_Detection, p.1]]","x":1665,"y":-1237,"width":250,"height":335,"color":"3"},
+		{"id":"8a71a1146af2e998","type":"text","text":"\n> 1. **Preprocessing**:  \n>    Standard techniques to ease further steps, e.g., contrast enhancement, binarization, skew-correction, or noise removal. Additionally, the layout should be analyzed to allow subsequent steps to focus on actual content and ignore the background.  \n> \n> 2. **Music Object Detection**:  \n>    Finding and classifying all relevant symbols or glyphs in the image.  \n> \n> 3. **Notation Assembly**:  \n>    Recovering the music notation semantics from the detected and classified symbols. The output is a symbolic representation of the symbols and their relationships, typically as a graph.  \n> \n> 4. **Encoding**:  \n>    Encoding the music into any output format unambiguously, e.g., into MIDI for playback or MusicXML/MEI for further editing in a music notation program.\n>\n>[[understandingOMR.pdf#page=21&selection=8,0,27,64&color=red|understandingOMR, p.21]]\n","x":1840,"y":320,"width":595,"height":580,"color":"2"},
+		{"id":"b6e51ec2374d1631","type":"text","text":"Main steps","x":2013,"y":200,"width":250,"height":60,"color":"2"},
+		{"id":"83da196e994781c7","type":"text","text":"https://github.com/apacha/MusicSymbolClassifier","x":1055,"y":750,"width":360,"height":90,"color":"#aa2bee"},
+		{"id":"92c216a920bd4678","type":"text","text":"https://apacha.github.io/OMR-Datasets/","x":1175,"y":540,"width":360,"height":120,"color":"#aa2bee"},
+		{"id":"b2f8988ba798196c","type":"text","text":"List of  datasets (includes handwritten and printed sources)\n> [!PDF|] [[Towards_a_Universal_Music_Symbol_Classifier.pdf#page=1&selection=0,42,0,42|Towards_a_Universal_Music_Symbol_Classifier, p.1]]\n> > Towards a Universal Music Symbol Classifier\n> \n> ","x":660,"y":600,"width":355,"height":360,"color":"#aa2bee"},
+		{"id":"aca33838b0d96eed","type":"text","text":"Datatsets","x":890,"y":380,"width":250,"height":80,"color":"#aa2bee"},
+		{"id":"cb42bc70547a93ec","x":625,"y":-720,"width":250,"height":140,"color":"5","type":"text","text":"E2E OMR with CNN and RNN (monophonic scores)"},
+		{"id":"ecfb25c2bd1daa98","x":565,"y":-520,"width":310,"height":360,"color":"5","type":"text","text":"[[End-to-End Neural Optical Music Recognition of Monophonic Scores_compressed.pdf]]\n\npaper proposes a model that combines Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs) with a **Connectionist Temporal Classification (CTC)** loss function, enabling training directly from images paired with musical transcripts."}
 	],
 	"edges":[
 		{"id":"bc46ceb5ab6ec045","fromNode":"8caf05d5f62eb707","fromSide":"bottom","toNode":"1397383c3bee83ea","toSide":"top"},
@@ -22,6 +29,10 @@
 		{"id":"03aa5485f2fbecb6","fromNode":"196af9ae129b7f17","fromSide":"bottom","toNode":"2a5f57fc75eda644","toSide":"top"},
 		{"id":"088c597ec4a6d559","fromNode":"c498cbb0891fa771","fromSide":"bottom","toNode":"c10fa58037cf7a00","toSide":"top","color":"3"},
 		{"id":"4ac2a24dc3efb85b","fromNode":"aca33838b0d96eed","fromSide":"bottom","toNode":"b2f8988ba798196c","toSide":"top","color":"#aa2bee"},
-		{"id":"b7715d12c8f955ef","fromNode":"c498cbb0891fa771","fromSide":"bottom","toNode":"179bb11ce9577fdd","toSide":"top","color":"3"}
+		{"id":"b7715d12c8f955ef","fromNode":"c498cbb0891fa771","fromSide":"bottom","toNode":"179bb11ce9577fdd","toSide":"top","color":"3"},
+		{"id":"fffc5c5d92b94a10","fromNode":"b6e51ec2374d1631","fromSide":"bottom","toNode":"8a71a1146af2e998","toSide":"top","color":"2"},
+		{"id":"eca1b8ff1a234a4a","fromNode":"aca33838b0d96eed","fromSide":"right","toNode":"92c216a920bd4678","toSide":"top","color":"#aa2bee"},
+		{"id":"09019328eacfbdeb","fromNode":"aca33838b0d96eed","fromSide":"bottom","toNode":"83da196e994781c7","toSide":"top","color":"#aa2bee"},
+		{"id":"bb9c6a7dfc868532","fromNode":"cb42bc70547a93ec","fromSide":"bottom","toNode":"ecfb25c2bd1daa98","toSide":"top","color":"5"}
 	]
 }
