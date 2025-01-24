@@ -20,6 +20,17 @@ For our project we're concerned with the **replayability** (extraction of music 
 ## Goals
 1. Improve upon current OMR systems/algorithms and generate MIDI files or other formats from printed music sheets/scores
 2. Generate audio files from the MIDI files to synthesis software to produce audio file
+3. Transcribing OMR -> developing pipeline of converting sheet music into machine-readable format. Process includes extraction, interpretation, and encoding musical information from printed symbols on the page and produce digital representation that preserves music's content and structure. Final goal is to generate audio format of that digitized representation. Should combine both combine **agnostic** and **semantic** representations to balance the strengths of each approach.
+
+1. **Agnostic Phase**: Identifies and classifies symbols visually.
+2. **Semantic Phase**: Interprets the identified symbols in their musical context.
+
+This hybrid approach ensures accurate transcription while preserving flexibility for different use cases, such as creating a digital score for editing or playback.
+
+2025/01/24:
+1. play with the models 
+2. proposal for ensemble learning
+3. 
 ## Current Literature
 [[Literature and Github]]
 
